@@ -45,7 +45,7 @@ inspector.set_inspector_node("foo", 5.1)
 
 And these are all equivalent methods of getting an inspector node:
 
-```
+```python
 var fizz = inspector.get_inspector_node("baz.fizz")
 var fizz = inspector.get_inspector_node("baz:fizz")
 var fizz = inspector.get_inspector_node("baz/fizz")
