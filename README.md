@@ -24,7 +24,7 @@ An easy-to-use inspector control for Godot Engine based on Tree
 In addition to setting the exported target_path property within the
 Godot editor, there are several ways to set the target in GDScript:
 
-```
+```python
 inspector.set_target(document)
 inspector.set_target(self, "document.baz")
 inspector.target_path = "%s:document" % [get_path()]
@@ -39,7 +39,7 @@ Because of this design, it's straightforward to query and modify target
 properties being watched by the inspector. Here's the easiest way to directly
 modify a value:
 
-```
+```python
 inspector.set_inspector_node("foo", 5.1)
 ```
 
