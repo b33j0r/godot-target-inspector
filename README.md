@@ -11,7 +11,7 @@ An easy-to-use inspector control for Godot Engine based on Tree
 - [x] Automatic two-way data binding
 - [x] Event-driven updates if the target has a `changed` signal
 - [x] Polling-driven updates if event-driven isn't available
-- [-] Supported types
+- [ ] Supported types
   - [x] `Node` and `Resource` (embedded/nested objects)
   - [x] `float` (supports ranges, but all three of `min`, `max`, `step` must be specified)
   - [x] `int` (supports ranges, but all three of `min`, `max`, `step` must be specified)
