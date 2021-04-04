@@ -1,0 +1,67 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Resource",
+"class": "BazResource",
+"language": "GDScript",
+"path": "res://demo/Demo_BazResource.gd"
+}, {
+"base": "Resource",
+"class": "FoobarResource",
+"language": "GDScript",
+"path": "res://demo/Demo_FoobarResource.gd"
+}, {
+"base": "VBoxContainer",
+"class": "TargetInspector",
+"language": "GDScript",
+"path": "res://addons/target-inspector/TargetInspector.gd"
+}, {
+"base": "Node",
+"class": "TargetInspectorNode",
+"language": "GDScript",
+"path": "res://addons/target-inspector/TargetInspectorNode.gd"
+}, {
+"base": "Object",
+"class": "WindowInfo",
+"language": "GDScript",
+"path": "res://demo/Demo_WindowInfo.gd"
+} ]
+_global_script_class_icons={
+"BazResource": "",
+"FoobarResource": "",
+"TargetInspector": "",
+"TargetInspectorNode": "",
+"WindowInfo": ""
+}
+
+[application]
+
+config/name="godot-inspector"
+run/main_scene="res://Demo.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=700
+window/size/height=280
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/target-inspector/plugin.cfg" )
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_clear_color=Color( 0.411765, 0.54902, 0.533333, 1 )
+environment/default_environment="res://default_env.tres"
